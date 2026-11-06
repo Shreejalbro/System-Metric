@@ -1,0 +1,6 @@
+{
+  "name": "System Metric",
+  "description": "Production-ready offline habit tracking dashboard and music player.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
