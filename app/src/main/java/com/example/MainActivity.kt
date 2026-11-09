@@ -74,11 +74,14 @@ class MainActivity : ComponentActivity() {
             }
         })
 
-        // Load the local HTML file from assets
+        // Load the local HTML file from assets immediately
         webView.loadUrl("file:///android_asset/index.html")
     }
 
     private fun setupWebView() {
+        // Prevent default white background flash before HTML content renders
+        webView.setBackgroundColor(android.graphics.Color.parseColor("#0f172a"))
+
         val settings = webView.settings
 
         // 1. JavaScript & Storage Configurations
